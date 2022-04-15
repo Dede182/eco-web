@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Home from './component/home'
+import Navbar from './component/navbar';
+import {Switch,Route,useLocation} from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+import Products from './component/products';
+import About from './component/about'
+import Contact from './component/contact'
+import Login from './component/login';
+import Register from './component/register';
+import Product from './component/product';
+import Cart from './component/cart'
+import Checkout from './component/checkout';
+import Animateroute from './animaterote';
 function App() {
+  const location = useLocation();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Navbar/>
+       <AnimatePresence>
+         <Animateroute/>
+       </AnimatePresence>
     </div>
+    
   );
 }
-
 export default App;

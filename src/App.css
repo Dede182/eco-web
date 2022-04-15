@@ -1,38 +1,254 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+.cartt{
+  background-color: #f5b7ce83;
+  border-radius: 15px;
+  box-shadow:  0px 0px 8px #7e7478;
+}
+.rowg{
+  --bs-gutter-x: 5px!important;
+}
+.badge,.redeem{
+  background-color: #d99cfc;
+}
+.btn-co{
+  
+}
+.img-box{
+  box-shadow:  0px 7px 18px #222121;
+}
+.text-s{
+  text-shadow :0px 0px 8px rgb(255,255,255);
+}
+.text-b{
+  text-shadow :0px 0px 8px #9e9a9a;
+}
+.nav-bar a{
+  font-size:18px;
+}
+.app{
+  max-width: 100%;
+}
+.svgg{
+  height: 50px;
+ transform: rotate(-20deg);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.p-card div img{
+  height:220px;
+  width:auto;
+}
+.App{
+  height: fit-content;
+}
+#root{
+  height:100vh;
+}
+.ss{
+  opacity: .0;
+}
+.hh{
+  height: 80vh!important;
+}
+#root,.App{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1022%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(255%2c 200%2c 221%2c 1)'%3e%3c/rect%3e%3ccircle r='14.335' cx='519.49' cy='184.57' fill='rgba(255%2c 175%2c 204%2c 1)'%3e%3c/circle%3e%3ccircle r='39.7' cx='788.67' cy='159.85' fill='rgba(255%2c 175%2c 204%2c 1)'%3e%3c/circle%3e%3ccircle r='16.365' cx='1277.01' cy='312.06' fill='rgba(255%2c 175%2c 204%2c 1)'%3e%3c/circle%3e%3ccircle r='36.88' cx='1107.53' cy='384.64' fill='rgba(255%2c 175%2c 204%2c 1)'%3e%3c/circle%3e%3ccircle r='37.25' cx='1011.91' cy='488.26' fill='rgba(205%2c 180%2c 219%2c 1)'%3e%3c/circle%3e%3ccircle r='24.515' cx='395.19' cy='61.93' fill='rgba(255%2c 175%2c 204%2c 1)'%3e%3c/circle%3e%3ccircle r='26.865' cx='1271.78' cy='168.54' fill='rgba(255%2c 175%2c 204%2c 1)'%3e%3c/circle%3e%3ccircle r='40.21' cx='712.72' cy='94.26' fill='rgba(255%2c 175%2c 204%2c 1)'%3e%3c/circle%3e%3ccircle r='25.195' cx='486.19' cy='438.22' fill='rgba(205%2c 180%2c 219%2c 1)'%3e%3c/circle%3e%3ccircle r='51.795' cx='1196.13' cy='432.94' fill='rgba(205%2c 180%2c 219%2c 1)'%3e%3c/circle%3e%3ccircle r='31.105' cx='1146.59' cy='368.18' fill='rgba(205%2c 180%2c 219%2c 1)'%3e%3c/circle%3e%3ccircle r='19.485' cx='341.6' cy='234.08' fill='rgba(205%2c 180%2c 219%2c 1)'%3e%3c/circle%3e%3ccircle r='25.98' cx='1348.97' cy='228.84' fill='rgba(205%2c 180%2c 219%2c 1)'%3e%3c/circle%3e%3ccircle r='48.42' cx='1260.4' cy='64.12' fill='rgba(205%2c 180%2c 219%2c 1)'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1022'%3e%3crect width='1440' height='560' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"); 
+  
+  background-attachment: fixed;
+  background-position:center;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+                              /* buttton section start */
+.blue-btn{
+  background-color: #d2a5eee5!important;
+  transition:all .5s ease;
 }
+.blue-btn:hover{
+  background-color: #9e73b8!important;
+  transition:all .5s ease;
+  color:#010b11!important;
+  transform: scale(1.1);
+  text-shadow :0px 0px 8px rgb(255,255,255);
+  box-shadow:  0px 0px 8px #CDB4DB;
+}
+.button{
+  background-color: #f88cb3!important;
+  font-weight: 600;
+  border : 1px solid #ffa3c5c0!important;
+  transition:all .5s ease;
+}
+.button:hover{
+  color:#000!important;
+  background-color: #ffd3e5!important;
+  transition:all .5s ease;
+  color:#010b11!important;
+  transform: scale(1.1);
+  text-shadow :0px 0px 8px rgb(255,255,255);
+  box-shadow:  0px 0px 8px #fca9c9;
+}
+/* ------------------------------------font stye start------------------------------- */
+.bb,.gu{
+  /* font-family: 'Beau Rivage', cursive; */
+  font-family: 'Grape Nuts', cursive;
+  font-weight: 700;
+}
+.nav-link,.ct,.dde{
+  font-family: 'Fjalla One', sans-serif;
+}
+.ag{
+  font-family: 'Courgette', cursive;
+}
+/* ------------------------------------font stye end------------------------------- */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+                                /* button section end */
+/* products card section */
+.card-title,.card-text{
+  font-size: 1em!important;
+}
+.p-card{
+  border-radius: 16px;
+  background: #fff;
+  box-shadow:  7px 7px 19px rgba(133, 131, 131, 0.568),
+               -7px -7px 19px rgba(51, 50, 50, 0.212);
+}
+.card{
+  background:none!important;
+  border : none!important;
+}
+/* products card section end */
+
+/* navbar section start */
+#contactimg{
+  height:300px;
+  transform:rotate(-12deg);
+}
+.navbar-toggler,.navbar-brand{
+  font-size: 20px!important;
+}
+.ass{
+  background-color: #fde9f11e!important;
+  box-shadow:  0px 0px 8px #666565ad;
+}
+.navbar-brand{
+  font-size:10px!important;
+  font-family: 'Beau Rivage', cursive;
+}
+/* navbar section end */
+/* -----------------external edition start------------------- */
+
+.jkj{
+  height:100%!important;
+  flex-direction: row!important;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.img-for{
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* -----------------external edition end------------------- */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* media query section start */
+@media screen and (min-width: 1200px){
+  .navbar-expand-xl .navbar-collapse {
+    display: flex!important;
+    justify-content: space-between;
+    
+}
+.navbar-brand{
+  font-size:1em!important;
+}
+}
+@media  screen and (max-width:1000px) {
+  .fonta{
+  font-size: 1.1em!important;
+}
+  .jkj{
+    flex-wrap: wrap!important;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+  .img-for img{
+  height: 40vh!important;
+  width: auto;
+  margin-block-end: 0!important;
   }
 }
+@media screen and (min-width:761px){
+  .navbar-brand{
+    font-size:1em!important;
+  }
+}
+@media  screen and (max-width:760px) {
+  .navbar-brand{
+    font-size:1em!important;
+  }
+  .coo{
+    padding:2px 10px!important;
+    margin: 2px 0px!important;
+  }
+  .card-title,.card-text,.faw{
+    font-size: .7em!important;
+  }
+  .p-card div{
+    padding:5px!important;
+  }
+  .dd{
+  font-size:.7rem!important;
+  font-weight: 600!important;
+  height: 55px!important;
+  width:80px!important;
+  flex-wrap: wrap;
+  margin-bottom:6px!important;
+}
+.card-text{
+  margin-bottom:7px!important;
+}
+.card-img-top{
+  height: 150px!important;
+  width : auto!important;
+}
+.ef{
+  display: flex!important;
+  flex-wrap: wrap!important;
+  width:100%!important;
+  margin-bottom:6px!important; 
+}
+.cartimg{
+  height: 150px!important;
+  width:150px;
+}
+.fonta{
+  font-size: .9em!important;
+}
+}
+@media  screen and (max-width:460px) {
+  .card-img-top{
+    height: 100px!important;
+    width : auto!important;
+  }
+  .dd{
+    font-size: .6em!important;
+    height: 50px!important;
+    width:80px!important;
+  }
+  .bb{
+    margin:0px!important;
+    padding:3px!important;
+  }
+  .card-title,.card-text,.faw{
+    font-size: .6em!important;
+  }
+  .a{
+    padding:4px!important;
+  }
+  .faw{
+    padding:2px!important;
+    line-height: 14px!important;
+  }
+  .navbar-brand{
+    font-size:1em!important;
+  }
+}
+@keyframes slide-top{0%{transform:translateY(1px)}to{transform:translateY(-2px)}}
