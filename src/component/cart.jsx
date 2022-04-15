@@ -4,6 +4,7 @@ import { useDispatch , useSelector } from 'react-redux'
 import { delitem } from '../redux/action'
 import {motion} from 'framer-motion'
 import {pagetransition}  from "./home";
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
 const Cart=()=> {
     const state = useSelector((state) => state.additems)
     const dispath = useDispatch();
@@ -23,7 +24,15 @@ const Cart=()=> {
                             <h3 className='fonta ct text-s text-sm-start text-center'>{cartItem.title}</h3>
                             <p className='lead ag fonta text-s fw-bold text-sm-start text-center'>${cartItem.price}</p>
                             <div className="btncontrol d-flex justify-content-center">
-                                <button onClick = {()=>handleClose(cartItem)} className="btn" aria-label='Close'> <i className = "fa-solid fa-trash me-1"></i></button>                               
+                                <button onClick = {()=>handleClose(cartItem)} className="btn trash" aria-label='Close'> 
+                                <Player
+                                    autoplay = {false}
+                                    loop
+                                    speed={1}
+                                    src="https://cdn.lordicon.com/dovoajyj.json"
+                                    style={{ height: '50px', width: '60px' }}>
+                                </Player>
+                                </button>                               
                             </div>
                         </div>
                     </div>

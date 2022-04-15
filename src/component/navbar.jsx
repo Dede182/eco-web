@@ -3,6 +3,7 @@ import {NavLink} from 'react-router-dom';
 import Cartbtn from './cartbtn';
 import {motion} from 'framer-motion'
 import {pagetransition}  from "./home";
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
 const colorval = {
   before : {
     opacity : .9,
@@ -39,16 +40,49 @@ SV Collection</NavLink>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ms-2 mb-2 mb-lg-0 text-center">
         <li className="nav-item">
-          <NavLink className="nav-link active" aria-current="page" to="/">Home</NavLink>
+          <NavLink className="nav-link active" aria-current="page" to="/">
+          <Player
+              autoplay
+              loop = {5}
+              src="https://cdn.lordicon.com/igpbsrza.json"
+              style={{ height: '30px', width: '30px' }}>
+
+              </Player>
+            Home</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="/products">Products</NavLink>
+          <NavLink className="nav-link" to="/products">
+          <Player
+              autoplay
+              loop = {5}
+              src="https://cdn.lordicon.com/webtefou.json"
+              style={{ height: '30px', width: '30px' }}>
+
+              </Player>
+            Products</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="/about">About</NavLink>
+          <NavLink className="nav-link" to="/about">
+          <Player
+               autoplay
+               loop = {5}
+              src="https://cdn.lordicon.com/dklbhvrt.json"
+              style={{ height: '30px', width: '30px' }}>
+
+              </Player>
+            About</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="/contact">Contact</NavLink>
+        
+          <NavLink className="nav-link" to="/contact">
+          <Player
+            autoplay
+             loop = {5}
+              src="https://cdn.lordicon.com/itykargr.json"
+              style={{ height: '30px', width: '30px' }}>
+
+              </Player>
+            Contact</NavLink>
         </li>
       </ul>
       <div className="buttons d-flex justify-content-center">

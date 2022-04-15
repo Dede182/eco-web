@@ -47,7 +47,7 @@ const Products = () => {
                     return (
                         <>
                             <motion.div  
-                            initial ={{scale:0,opacity : 0}} animate = {{scale:1,opacity:1}} transition = {{delay:.2,duration:.1 * (product.id + 8)}}
+                            initial ={{scale:0,opacity : 0}} animate = {{scale:1,opacity:1}} transition = {{delay:.1,duration:.1 * (product.id + 5)}}
                             className="p-card col-md-3 col-5 col-sm-5 col-xl-2 col-lg-3 mb-4 mx-2">
                                 <div class="card text-center p-sm-2 p-4" key ={product.id}>
                                     <img src={product.image} class="card-img-top img-fluid" alt={product.title} />
