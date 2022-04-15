@@ -1,5 +1,5 @@
 import React from "react";
-import { useState,useEffect } from "react";
+import { useState,useEffect} from "react";
 import { NavLink } from "react-router-dom";
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import Spinner from 'react-bootstrap/Spinner'
@@ -67,7 +67,7 @@ const Product = ()=>{
                             $ {products.price} 
                         </h3>
                        <p className="lead text-start">{products.description}</p>
-                       <button onClick = {()=> handleCart(products)} className="btn ag btn-outline-dark">
+                       <button onClick = {()=> handleCart(products)} alt = "remove" className="btn ag btn-outline-dark">
                            {cartbtn}
                        </button>
                        <NavLink to ="/cart" className="btn ag btn-dark ms-2 px-3 py-2">

@@ -23,7 +23,7 @@ const Cart=()=> {
                             <h3 className='fonta ct text-s text-sm-start text-center'>{cartItem.title}</h3>
                             <p className='lead ag fonta text-s fw-bold text-sm-start text-center'>${cartItem.price}</p>
                             <div className="btncontrol d-flex justify-content-center">
-                                <button onClick = {()=>handleClose(cartItem)} className="btn-close " aria-label='Close'></button>                               
+                                <button onClick = {()=>handleClose(cartItem)} className="btn" aria-label='Close'> <i className = "fa-solid fa-trash me-1"></i></button>                               
                             </div>
                         </div>
                     </div>
@@ -35,10 +35,12 @@ const Cart=()=> {
         return (
             <>
             <div className="px-4 my-5 rounded-3" >
-                <div className="container py-4">
-                    <div className="row">
-                        <h3>Your Cart is empty now</h3>
+                <div className="container d-flex justify-content-center py-4">
+                    <div className="row d-block text-center">
+                        <h3 className='ct fs-1 mb-3' >Your Cart is empty now</h3>
+                        <NavLink to = '/products' className= 'btn ag btn-sm button py-2'>Explore some</NavLink>
                     </div>
+                    
                 </div>
                 </div>
             </>

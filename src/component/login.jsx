@@ -23,15 +23,15 @@ const Login = () => {
                     className="col-md-6">
                         <img src="assests/login.png" className="img-fluid" alt="loginpng" height={500} width={600} />
                     </motion.div>
-                    <div className="col-md-6">
-                        <form class="row g-3">
+                    <div className="col-md-6 ">
+                        <form class="row g-3  ">
                             <motion.div initial ={{x :1200}} animate = {{x:0}} transition = {{delay:.6,duration:1}} class="col-md-12">
                                 <label for="inputEmail4" class="form-label">Email</label>
-                                <input type="email" class="form-control w-75" id="inputEmail4" />
+                                <input type="email" class="form-control w-lg-75" id="inputEmail4" />
                             </motion.div>
                             <motion.div initial ={{x :1200}} animate = {{x:0}} transition = {{delay:.9,duration:1}} class="col-md-12">
                                 <label for="inputPassword4" class="form-label">Password</label>
-                                <input type="password" class="form-control w-75" id="inputPassword4" />
+                                <input type="password" class="form-control w-lg-75" id="inputPassword4" />
                             </motion.div>
                             <motion.div initial ={{x :1200}} animate = {{x:0}} transition = {{delay:1.2,duration:1}} class="col-12">
                                 <div class="form-check">

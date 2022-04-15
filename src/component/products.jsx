@@ -9,7 +9,6 @@ const Products = () => {
     const [filter, setFilter] = useState(data);
     const [loading, setLoading] = useState(false);
     let componentMounted = true;
-
     useEffect(() => {
         const getProucts = async () => {
             setLoading(true);
@@ -55,7 +54,7 @@ const Products = () => {
                                     <div class="card-body">
                                         <h5 class="card-title ct">{product.title.substring(0,11)}...</h5>
                                         <p class="card-text ag lead fw-bold">${product.price}</p>
-                                        <NavLink to={`/products/${product.id}`} class="btn gu faw btn-sm blue-btn">Buy Now</NavLink>
+                                        <NavLink to={`/products/${product.id}`} class="btn ag faw btn-sm blue-btn">Buy Now</NavLink>
                                     </div>
                                 </div>
                             </motion.div>

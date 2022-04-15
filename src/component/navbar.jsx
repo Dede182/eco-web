@@ -53,11 +53,11 @@ SV Collection</NavLink>
       </ul>
       <div className="buttons d-flex justify-content-center">
         <button className="btn a">
-          <NavLink to="/login" className="btn bb btn-sm button">
+          <NavLink to="/login" className="btn ag btn-sm button">
             <i class= "fa fa-sign-in me-1"></i>Login</NavLink>
         </button>
         <button className="btn a">
-          <NavLink to="/register" className="btn bb btn-sm button">
+          <NavLink to="/register" className="btn ag btn-sm button">
             <i className = "fa-solid fa-user-plus me-1"></i>Register</NavLink>
         </button>
         <button className="btn a">

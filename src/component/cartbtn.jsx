@@ -8,7 +8,7 @@ const Cartbtn = ()=>{
     console.log(state)
     return(
         <>
-            <NavLink to="/cart" className="btn bb btn-sm button">
+            <NavLink to="/cart" className="btn ag btn-sm button">
             <i class="fa-solid fa-cart-shopping"></i>Cart ({state.length})</NavLink>
         </>
     )
