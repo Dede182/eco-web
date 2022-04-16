@@ -181,6 +181,9 @@ p,h1,h2,h3,h4{
 }
 }
 @media  screen and (max-width:1000px) {
+  .jambo{
+    height: 25vh!important;
+  }
   .fonta{
   font-size: 1.1em!important;
 }
@@ -260,7 +263,7 @@ p,h1,h2,h3,h4{
     padding:3px!important;
   }
   .card-title,.card-text,.faw{
-    font-size: .7em!important;
+    font-size: .8em!important;
   }
   .a{
     padding:4px!important;

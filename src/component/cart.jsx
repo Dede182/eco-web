@@ -25,13 +25,6 @@ const Cart=()=> {
                             <p className='lead ag fonta text-s fw-bold text-sm-start text-center'>${cartItem.price}</p>
                             <div className="btncontrol d-flex justify-content-center">
                                 <button onClick = {()=>handleClose(cartItem)} className="btn trash" aria-label='Close'> 
-                                <Player
-                                    autoplay = {false}
-                                    loop
-                                    speed={1}
-                                    src="https://cdn.lordicon.com/dovoajyj.json"
-                                    style={{ height: '50px', width: '60px' }}>
-                                </Player>
                                 </button>                               
                             </div>
                         </div>
@@ -43,9 +36,16 @@ const Cart=()=> {
     const emptyCart = () =>{
         return (
             <>
-            <div className="px-4 my-5 rounded-3" >
-                <div className="container d-flex justify-content-center py-4">
+            <div className="px-4 my-1 rounded-3" >
+                <div className="container d-flex justify-content-center py-2">
                     <div className="row d-block text-center">
+                    <Player
+                        className="jambo"
+                        autoplay
+                        loop
+                        src="assests/lottieanimation/empty-box.json"
+                        style={{ height: '60vh  ', width: 'auto' }}>
+                     </Player>
                         <h3 className='ct fs-1 mb-3' >Your Cart is empty now</h3>
                         <NavLink to = '/products' className= 'btn ag btn-sm button py-2'>Explore some</NavLink>
                     </div>

@@ -43,18 +43,18 @@ SV Collection</NavLink>
           <NavLink className="nav-link active" aria-current="page" to="/">
           <Player
               autoplay
-              loop = {5}
+              loop
               src="https://cdn.lordicon.com/igpbsrza.json"
               style={{ height: '30px', width: '30px' }}>
 
-              </Player>
+              </Player>- 
             Home</NavLink>
         </li>
         <li className="nav-item">
           <NavLink className="nav-link" to="/products">
           <Player
               autoplay
-              loop = {5}
+              loop
               src="https://cdn.lordicon.com/webtefou.json"
               style={{ height: '30px', width: '30px' }}>
 
@@ -65,7 +65,7 @@ SV Collection</NavLink>
           <NavLink className="nav-link" to="/about">
           <Player
                autoplay
-               loop = {5}
+               loop 
               src="https://cdn.lordicon.com/dklbhvrt.json"
               style={{ height: '30px', width: '30px' }}>
 
@@ -77,7 +77,7 @@ SV Collection</NavLink>
           <NavLink className="nav-link" to="/contact">
           <Player
             autoplay
-             loop = {5}
+             loop
               src="https://cdn.lordicon.com/itykargr.json"
               style={{ height: '30px', width: '30px' }}>
 

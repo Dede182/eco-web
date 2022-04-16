@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import { motion } from "framer-motion";
 import {pagetransition}  from "./home";
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
 export const imgmotion = {
     before:{
         scale : 0,
@@ -42,28 +43,34 @@ const Register = () => {
             exit = "exit"
             className="container ct py-3 login d-flex mt-1 justify-content-center">
                 <div className="row">
-                    <h1 className="text-center mb-4">Register</h1>
+                    <h1 className="text-center mb-1 mb-md-4">Register</h1>
                     <motion.div className="col-md-6" 
                     variants={imgmotion}
                     initial = "before"
                     animate = "after">
-                        <img src="assests/sign.png" className="img-fluid" alt="loginpng" height={500} width={600} />
+                        <Player
+                        className="jambo"
+                        autoplay
+                        loop
+                        src="assests/lottieanimation/register.json"
+                        style={{ height: '60vh  ', width: 'auto' }}>
+                     </Player>
                     </motion.div>
                     <div className="col-md-6">
-                        <form class="row g-3">
-                            <motion.div initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:.7,duration:1}} class="col-md-6">
+                        <form class="row g-2">
+                            <motion.div initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:.7,duration:1}} class="col-lg-6">
                                 <label for="inputEmail4" class="form-label">Name</label>
                                 <input type="text" class="form-control" id="inputEmail4" />
                             </motion.div>
-                            <motion.div initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:1,duration:1}} class="col-md-6">
+                            <motion.div initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:1,duration:1}} class="col-lg-6">
                                 <label for="inputEmail4" class="form-label">Email</label>.2
                                 <input type="email" class="form-control" id="inputEmail4" />
                             </motion.div>
-                            <motion.div initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:1.3,duration:1}} class="col-md-6">
+                            <motion.div initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:1.3,duration:1}} class="col-lg-6">
                                 <label for="inputPassword4" class="form-label">Password</label>
                                 <input type="password" class="form-control" id="inputPassword4" />
                             </motion.div>
-                            <motion.div initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:1.6,duration:1}} class="col-md-6">
+                            <motion.div initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:1.6,duration:1}} class="col-lg-6">
                                 <label for="inputPassword4" class="form-label">Enter Password again</label>
                                 <input type="password" class="form-control" id="inputPassword4" />
                             </motion.div>

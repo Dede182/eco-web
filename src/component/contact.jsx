@@ -5,6 +5,7 @@ import Spinner from "react-bootstrap/Spinner";
 import {motion} from 'framer-motion'
 import {pagetransition}  from "./home";
 import { svgmotion,textmotion } from "./about";
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
 const Contact = () => {
     return (
         <motion.div variants={pagetransition}
@@ -13,7 +14,7 @@ const Contact = () => {
         exit = "exit">
             <div className="container ct mb-3">
                 <div className="row">
-                    <div className="col-12 text-center py-4 my-2">
+                    <div className="col-12 text-center py-3 my-0">
                         <h1>Have Some Question?</h1>
                         <hr />
                     </div>
@@ -24,12 +25,13 @@ const Contact = () => {
                     initial = "before"
                     animate = "after"
                     className="col-md-6 d-flex justify-content-center">
-                        <img
-                            src="assests/pngegg.png"
-                            id="contactimg"
-                            alt="contact"
-                            className="img-fluid massage"
-                        />
+                         <Player
+                        className="jambo"
+                        autoplay
+                        loop
+                        src="assests/lottieanimation/contact.json"
+                        style={{ height: '60vh  ', width: 'auto' }}>
+                     </Player>
                     </motion.div>
                     <motion.div
                     variants={svgmotion}
