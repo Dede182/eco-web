@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import Spinner from 'react-bootstrap/Spinner'
 import {motion} from 'framer-motion'
 import {pagetransition}  from "./home";
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
 const Products = () => {
     const [data, setData] = useState([])
     const [filter, setFilter] = useState(data);
@@ -28,9 +29,21 @@ const Products = () => {
     const Loading = () => {
             return (
             <>
-                <Spinner animation="border" role="status">
-                    <span className="visually-hidden">Loading...</span>
-                </Spinner>
+                
+                <div className="d-flex hh align-items-center justify-content-center">
+                    <div className="row d-flex align-items-center justify-content-center">
+                         <Player
+                        className="jambo"
+                        autoplay
+                        loop
+                        speed = {.8}
+                        src="assests/lottieanimation/loading.json"
+                        style={{ height: '60vh', width: 'auto' }}>
+                        </Player>
+                        <h3 className="text-center fs-lg-1 fw-bold">Loading...</h3>
+                    </div>
+              
+                </div>
             </>
         )
         

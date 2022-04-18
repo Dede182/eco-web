@@ -31,8 +31,8 @@ const Home = () =>{
             initial = "before"
             animate = "after"
             exit = "exit"
-            className="card p-4 border-0">
-            <Carousel fade>
+            className="card p-2 border-0">
+            <Carousel fade touch >
   <Carousel.Item>
     <img
       className="d-block mg w-100"
@@ -48,17 +48,11 @@ const Home = () =>{
     />
 
   </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block mg w-100"
-      src="assests/Delivery.jpg"
-      alt="Third slide"
-    />
-  </Carousel.Item>
+  
 </Carousel>
-           
             </motion.div>
             <Product/>
+           
         </div>
     )
 }

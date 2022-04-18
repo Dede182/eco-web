@@ -10,7 +10,7 @@ p,h1,h2,h3,h4{
   cursor: default;
 }
 .mg{
-  height : 60vh!important;
+  height : 70vh!important;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -22,6 +22,14 @@ p,h1,h2,h3,h4{
 .trash{
   transition: all .5s ease;
   font-size:1.6em;
+}
+.caption{
+  position: absolute;
+  color:#000!important;
+  top:0;
+}
+.carosuel{
+  position: relative;
 }
 .trash{
   color:red;
@@ -195,7 +203,7 @@ p,h1,h2,h3,h4{
 }
 @media  screen and (max-width:1000px) {
   .jambo{
-    height: 25vh!important;
+    height: 20vh!important;
   }
   .fonta{
   font-size: 1.1em!important;
@@ -206,7 +214,7 @@ p,h1,h2,h3,h4{
   }
   .img-for img{
   height: 40vh!important;
-  width: auto;
+  width: 30vw!important;
   margin-block-end: 0!important;
   }
 }
@@ -222,6 +230,9 @@ p,h1,h2,h3,h4{
   .navbar-brand{
     font-size:1em!important;
   }
+  .img-for img{
+    width: 45vw!important;
+    }
   .coo{
     padding:2px 10px!important;
     margin: 2px 0px!important;
@@ -269,6 +280,9 @@ p,h1,h2,h3,h4{
   .ss{
     height:50vh!important;
   }
+  .img-for img{
+    width: 65vw!important;
+    }
   .dd{
     font-size: .6em!important;
     height: 50px!important;

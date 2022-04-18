@@ -5,6 +5,23 @@ import { delitem } from '../redux/action'
 import {motion} from 'framer-motion'
 import {pagetransition}  from "./home";
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
+const pop = {
+    before : {
+        scale:0,
+        opacity:0,
+        y: -1000
+    },
+    after : {
+        scale : 1,
+        opacity:1,
+        y:0
+    },
+    transition:{
+        delay:1,
+        duration:3,
+        when : 'beforeChildren'
+    }
+}
 const Cart=()=> {
     const state = useSelector((state) => state.additems)
     const dispath = useDispatch();
@@ -14,7 +31,9 @@ const Cart=()=> {
     }
     const cartItems = (cartItem)=>{
         return(
-            <div className="px-4 my-5 rounded-3" key = {cartItem.id}>
+            <motion.div className="px-4 my-5 rounded-3" 
+            initial ={{scale:0,opacity : 0}} animate = {{scale:1,opacity:1}} transition = {{delay:1,duration:1}}
+            key = {cartItem.id}>
                 <div className="container py-3 cartt">  
                     <div className="row justify-content-center">
                         <div className="col-md-4 col-lg-4 col-xl-3 col-sm-5 d-flex justify-content-center mb-3   ">
@@ -25,18 +44,26 @@ const Cart=()=> {
                             <p className='lead ag fonta text-s fw-bold text-sm-start text-center'>${cartItem.price}</p>
                             <div className="btncontrol d-flex justify-content-center">
                                 <button onClick = {()=>handleClose(cartItem)} className="btn trash" aria-label='Close'> 
-                                </button>                               
+                                <Player
+                                    autoplay
+                                    loop
+                                    src="https://cdn.lordicon.com/gsqxdxog.json"
+                                    style={{ height: '40px', width: '40px' }}>
+
+              </Player></button>                               
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         )
     }
     const emptyCart = () =>{
         return (
             <>
-            <div className="px-4 my-1 rounded-3" >
+            <motion.div 
+            
+            initial ={{scale:0,opacity : 0}} animate = {{scale:1,opacity:1}} transition = {{delay:.8,duration:.8}}>
                 <div className="container d-flex justify-content-center py-2">
                     <div className="row d-block text-center">
                     <Player
@@ -51,7 +78,7 @@ const Cart=()=> {
                     </div>
                     
                 </div>
-                </div>
+                </motion.div>
             </>
         )
     }

@@ -2,11 +2,11 @@ import React from "react";
 import { useState,useEffect} from "react";
 import { NavLink } from "react-router-dom";
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
-import Spinner from 'react-bootstrap/Spinner'
 import { useDispatch } from "react-redux";
 import {additem,delitem} from "../redux/action/index"
 import {motion} from 'framer-motion'
 import {pagetransition}  from "./home";
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
 const Product = ()=>{
     const [cartbtn,setcardbtn] = useState("Add to Cart");
     const [products,setProducts] = useState([]);
@@ -25,9 +25,17 @@ const Product = ()=>{
         return(
             <>
                 <div className="d-flex hh align-items-center justify-content-center">
-                  <Spinner  animation="border" role="status">
-                    <span className="visually-hidden">Loading...</span>
-                </Spinner>  
+                    <div className="row d-flex align-items-center justify-content-center">
+                    <Player
+                        className="jambo"
+                        autoplay
+                        loop
+                        src="https://assets3.lottiefiles.com/packages/lf20_ppq0axrd.json"
+                        style={{ height: '60vh  ', width: 'auto' }}>
+                     </Player>
+                        <p className="text-center fw-bold">Loading...</p>
+                    </div>
+              
                 </div>
                 
             </>
@@ -51,7 +59,7 @@ const Product = ()=>{
             <>
                 <div className="jkj d-flex mt-3">
                 <div className="img-for mb-5 mx-5">
-                    <img src={products.image} alt={products.title} height = "400px" width = "400px" />
+                    <img className="img" src={products.image} alt={products.title} height = "400px" width = "400px" />
                 </div>
                 <div className="ct">
                     <h4 className="text-uppercase text-center text-black-75">
@@ -85,7 +93,7 @@ const Product = ()=>{
         animate = "after"
         exit = "exit">
             <div className="container py-2">
-                <div className="row py-2">
+                <div className="row py-0">
                     {loading ? <Loading/> : <Showproduct/>}
                 </div>
             </div>

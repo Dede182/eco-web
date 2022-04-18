@@ -6,7 +6,8 @@ const Checkout = ()=>{
     const state = useSelector((state)=>state.additems);
     var total = 0;
     const itemlist = (item)=>{
-        total = total + item.price 
+        total = total + item.price
+        
         return(
                  <li class="list-group-item d-flex justify-content-between lh-sm">
                     <div bis_skin_checked="1">
