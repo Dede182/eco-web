@@ -5,6 +5,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 *{
   text-decoration: none!important;
+  list-style-type:none!important;
+}
+.list{
+  display: flex!important;
+  flex-direction: column!important;
+  justify-content: flex-start!important;
+}
+.list{
+  margin-block-start: 0!important;
+  margin-block-end: 0!important;
+  padding-inline-start: 10px!important;
 }
 p,h1,h2,h3,h4{
   cursor: default;

@@ -38,7 +38,7 @@ const Contact = () => {
                     initial = "before"
                     animate = "after"
                     className="col-md-6 " >
-                        <form action="">
+                        <form action="#">
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">
                                     Full Name
@@ -57,7 +57,7 @@ const Contact = () => {
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlTextarea1" class="form-label">
-                                    Example textarea
+                                   Message
                                 </label>
                                 <textarea
                                     class="form-control mb-3"
