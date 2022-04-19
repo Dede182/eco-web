@@ -37,7 +37,7 @@ const Checkout = ()=>{
                 </li>
                 </ul>
 
-                <form class="card p-2">
+                <form class="card p-2" action = "#">
                 <div class="input-group" bis_skin_checked="1">
                     <input type="text" class="form-control ag" placeholder="Promo code"/>
                     <button type="submit" class="btn redeem">Redeem</button>

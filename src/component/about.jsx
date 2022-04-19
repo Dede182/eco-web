@@ -25,22 +25,22 @@ const pagetransition = {
 }
 export const textmotion = {
     before:{
-        x:-1000,
-        opacity : .0
+        x:100,
+        opacity : 0
     },
     after:{
         x:0,
         opacity : 1,
         transition:{
             delay:.6,
-            duration :1.1,
+            duration :1,
         } 
     }
 }
 export const svgmotion = {
     before:{
-        x:1000,
-        opacity : .1
+        x:200,
+        opacity : 0
     },
     after:{
         x:0,

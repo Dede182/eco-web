@@ -5,7 +5,7 @@ import { Carousel } from 'react-bootstrap'
 export const pagetransition = {
     before:{
         opacity:0,
-        x : 1000,
+        x : 300,
         
     },
     after : {
@@ -26,7 +26,7 @@ const Home = () =>{
     return(
         <div 
         className='hero'> 
-            <motion.div
+            <motion.div fade
             variants={pagetransition}
             initial = "before"
             animate = "after"

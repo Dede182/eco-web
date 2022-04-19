@@ -89,6 +89,11 @@ const Products = () => {
                         <h1 className="display-5 fw-bolder text-center">Latest Products</h1>
                         <hr />
                     </div>
+                    <form className="d-flex my-3 col-12">
+                        <div className="container d-flex justify-content-center">
+                        <input className="form-control search bg-dark text-white me-2 text-center" type="search" placeholder="Search" aria-label="Search"/>
+                        <button className="btn button btn-sm faw ag fw-bold" type="submit">Search</button></div>
+                    </form>
                 </div>
                 <div className="row justify-content-center">
                 <div className="buttons d-flex ef justify-content-center mb-2 pb-2">

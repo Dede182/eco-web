@@ -30,16 +30,16 @@ const Login = () => {
                      </Player>
                     </motion.div>
                     <div className="col-md-6 fs-5 ">
-                        <form class="row g-3  ">
-                            <motion.div initial ={{x :1200}} animate = {{x:0}} transition = {{delay:.6,duration:1}} class="col-md-12">
+                        <form class="row g-3" action = "#">
+                            <motion.div initial ={{x :1200}} animate = {{x:0}} transition = {{delay:.5,duration:.8}} class="col-md-12">
                                 <label for="inputEmail4" class="form-label">Email</label>
                                 <input type="email" class="form-control w-lg-75" id="inputEmail4" />
                             </motion.div>
-                            <motion.div initial ={{x :1200}} animate = {{x:0}} transition = {{delay:.9,duration:1}} class="col-md-12">
+                            <motion.div initial ={{x :1200}} animate = {{x:0}} transition = {{delay:.7,duration:.8}} class="col-md-12">
                                 <label for="inputPassword4" class="form-label">Password</label>
                                 <input type="password" class="form-control w-lg-75" id="inputPassword4" />
                             </motion.div>
-                            <motion.div initial ={{x :1200}} animate = {{x:0}} transition = {{delay:1.2,duration:1}} class="col-12">
+                            <motion.div initial ={{x :1200}} animate = {{x:0}} transition = {{delay:1,duration:.8}} class="col-12">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" id="gridCheck"/>
                                         <label class="form-check-label" for="gridCheck">
@@ -48,7 +48,7 @@ const Login = () => {
                                 </div>
                             
                             </motion.div>
-                            <motion.div initial ={{x :1200}} animate = {{x:0}} transition = {{delay:1.5,duration:1}} class="col-12">
+                            <motion.div initial ={{x :1200}} animate = {{x:0}} transition = {{delay:1,duration:.8}} class="col-12">
                                 <motion.button    variants={buttonhover}
                                     whileHover = "hover"
                                     animate ="visible" type="submit" class="btn btn-dark">Login</motion.button>

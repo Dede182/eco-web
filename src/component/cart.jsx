@@ -32,7 +32,7 @@ const Cart=()=> {
     const cartItems = (cartItem)=>{
         return(
             <motion.div className="px-4 my-5 rounded-3" 
-            initial ={{scale:0,opacity : 0}} animate = {{scale:1,opacity:1}} transition = {{delay:1,duration:1}}
+            initial ={{scale:0,opacity : 0}} animate = {{scale:1,opacity:1}} transition = {{delay:.8,duration:.8}}
             key = {cartItem.id}>
                 <div className="container py-3 cartt">  
                     <div className="row justify-content-center">
@@ -63,7 +63,7 @@ const Cart=()=> {
             <>
             <motion.div 
             
-            initial ={{scale:0,opacity : 0}} animate = {{scale:1,opacity:1}} transition = {{delay:.8,duration:.8}}>
+            initial ={{scale:0,opacity : 0}} animate = {{scale:1,opacity:1}} transition = {{delay:.5,duration:.7}}>
                 <div className="container d-flex justify-content-center py-2">
                     <div className="row d-block text-center">
                     <Player

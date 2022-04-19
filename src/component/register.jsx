@@ -57,32 +57,32 @@ const Register = () => {
                      </Player>
                     </motion.div>
                     <div className="col-md-6">
-                        <form class="row g-2">
-                            <motion.div initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:.7,duration:1}} class="col-lg-6">
+                        <form class="row g-2" action = "#">
+                            <motion.div initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:.5,duration:.8}} class="col-lg-6">
                                 <label for="inputEmail4" class="form-label">Name</label>
                                 <input type="text" class="form-control" id="inputEmail4" />
                             </motion.div>
-                            <motion.div initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:1,duration:1}} class="col-lg-6">
+                            <motion.div initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:.6,duration:.8}} class="col-lg-6">
                                 <label for="inputEmail4" class="form-label">Email</label>.2
                                 <input type="email" class="form-control" id="inputEmail4" />
                             </motion.div>
-                            <motion.div initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:1.3,duration:1}} class="col-lg-6">
+                            <motion.div initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:.8,duration:.8}} class="col-lg-6">
                                 <label for="inputPassword4" class="form-label">Password</label>
                                 <input type="password" class="form-control" id="inputPassword4" />
                             </motion.div>
-                            <motion.div initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:1.6,duration:1}} class="col-lg-6">
+                            <motion.div initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:1,duration:.8}} class="col-lg-6">
                                 <label for="inputPassword4" class="form-label">Enter Password again</label>
                                 <input type="password" class="form-control" id="inputPassword4" />
                             </motion.div>
-                            <motion.div initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:1.9,duration:1}} class="col-12">
+                            <motion.div initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:1,duration:.8}} class="col-12">
                                 <label for="inputAddress" class="form-label">Address</label>
                                 <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" />
                             </motion.div>
-                            <motion.div initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:2,duration:1}} class="col-12">
+                            <motion.div initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:1,duration:.8}} class="col-12">
                                 <label for="inputAddress" class="form-label">Ph number</label>
                                 <input type="number" class="form-control" id="inputAddress" placeholder="09xxxx" />
                             </motion.div>
-                            <motion.fieldset initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:2,duration:1}} class="row mt-3">
+                            <motion.fieldset initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:1,duration:.8}} class="row mt-3">
                                 <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
                                 <div class="col-sm-10">
                                     <div class="form-check">
@@ -99,7 +99,7 @@ const Register = () => {
                                     </div>
                                 </div>
                             </motion.fieldset>
-                            <motion.div initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:2,duration:1}} class="col-12">
+                            <motion.div initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:1,duration:.8}} class="col-12">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" id="gridCheck" />
                                     <label class="form-check-label" for="gridCheck">
@@ -107,7 +107,7 @@ const Register = () => {
                                     </label>
                                 </div>
                             </motion.div>
-                            <motion.div initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:2,duration:1}} class="col-12">
+                            <motion.div initial ={{scale:0}} animate = {{scale:1}} transition = {{delay:1,duration:.8}} class="col-12">
                                 <motion.button
                                     variants={buttonhover}
                                     whileHover = "hover"

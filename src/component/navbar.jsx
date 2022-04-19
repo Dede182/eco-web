@@ -25,7 +25,7 @@ const colorval = {
       animate = "after"
       exit = "exit">
   <nav class="navbar ass navbar-expand-xl navbar-light">
-  <div class="container-fluid">
+  <div class="container-fluid px-lg-5">
     <NavLink className="navbar-brand  fw-bold" to="/">
         <motion.svg variants={colorval} initial = 'before' animate = 'after' xmlns="http://www.w3.org/2000/svg" className='svgg' viewBox="0 0 290 290" enable-background="new 0 0 297 297">
   <g>
@@ -33,7 +33,7 @@ const colorval = {
     <path d="m228.631,98.299l-14.115,28.231c0.256-0.02 0.511-0.04 0.771-0.04 5.589,0 10.119,4.531 10.119,10.119v16.697c0,5.588-4.53,10.119-10.119,10.119-5.588,0-10.119-4.531-10.119-10.119v-16.697c0-0.283 0.02-0.563 0.043-0.84-0.716,0.3-1.446,0.568-2.205,0.77-1.44,0.383-2.925,0.576-4.415,0.576-3.41,0-6.71-1-9.546-2.891l-40.545-27.03-40.548,27.032c-2.838,1.891-6.138,2.889-9.545,2.889-1.489,0-2.976-0.193-4.415-0.576-0.758-0.202-1.487-0.471-2.203-0.77 0.023,0.277 0.043,0.557 0.043,0.84v16.697c0,5.588-4.531,10.119-10.119,10.119-5.589,0-10.119-4.531-10.119-10.119v-16.697c0-5.588 4.53-10.119 10.119-10.119 0.261,0 0.516,0.02 0.771,0.04l-14.115-28.231-29.844-19.897c-8.279,11.362-13.202,25.428-13.202,40.658 0,43.98 20.527,88.526 59.364,128.82 28.887,29.972 57.466,47.003 58.669,47.713 1.587,0.938 3.367,1.406 5.146,1.406 1.78,0 3.56-0.469 5.146-1.406 1.203-0.71 29.781-17.741 58.667-47.713 38.834-40.294 59.36-84.84 59.36-128.822 0-15.229-4.922-29.295-13.201-40.656l-29.843,19.897zm-103.405,105.097c0,5.589-4.531,10.12-10.119,10.12-5.589,0-10.119-4.531-10.119-10.12v-16.696c0-5.589 4.53-10.119 10.119-10.119 5.588,0 10.119,4.53 10.119,10.119v16.696zm33.393,33.395c0,5.588-4.531,10.119-10.119,10.119s-10.119-4.531-10.119-10.119v-16.697c0-5.588 4.531-10.119 10.119-10.119s10.119,4.531 10.119,10.119v16.697zm0-66.787c0,5.588-4.531,10.119-10.119,10.119s-10.119-4.531-10.119-10.119v-16.697c0-5.588 4.531-10.119 10.119-10.119s10.119,4.531 10.119,10.119v16.697zm33.394,33.392c0,5.589-4.53,10.12-10.119,10.12-5.588,0-10.119-4.531-10.119-10.12v-16.696c0-5.589 4.531-10.119 10.119-10.119 5.589,0 10.119,4.53 10.119,10.119v16.696z"/>
   </g>
 </motion.svg>
-SV Collection</NavLink>
+  SV Collection</NavLink>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -47,7 +47,7 @@ SV Collection</NavLink>
               src="https://cdn.lordicon.com/igpbsrza.json"
               style={{ height: '30px', width: '30px' }}>
 
-              </Player>- 
+              </Player>
             Home</NavLink>
         </li>
         <li className="nav-item">
@@ -98,10 +98,6 @@ SV Collection</NavLink>
           <Cartbtn/>
         </button>
       </div>
-      <form className="d-flex">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn button" type="submit">Search</button>
-      </form>
     </div>
   </div>
 </nav>

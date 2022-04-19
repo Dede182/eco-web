@@ -21,9 +21,11 @@ p,h1,h2,h3,h4{
   cursor: default;
 }
 .mg{
-  height : 70vh!important;
+  height : 80vh!important;
+  width: auto ;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  
 }
 .cartt{
   background-color: #f5b7ce83;
@@ -73,6 +75,9 @@ p,h1,h2,h3,h4{
 }
 .text-b{
   text-shadow :0px 0px 8px #9e9a9a;
+}
+.card-img-top{
+  object-fit: contain;
 }
 .nav-bar a{
   font-size:18px;
@@ -124,6 +129,9 @@ p,h1,h2,h3,h4{
 }
 .ct{
   font-size:1.4em!important;
+}
+.search{
+  width:50%!important;
 }
 .button{
   background-color: #f88cb3!important;
@@ -235,6 +243,9 @@ p,h1,h2,h3,h4{
   }
 }
 @media  screen and (max-width:760px) {
+  .search{
+    width:75%!important;
+  }
   .mg{
     height:35vh!important;
   }
